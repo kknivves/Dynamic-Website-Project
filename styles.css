@@ -220,7 +220,7 @@
   background-image: linear-gradient(to top, #ff0844 0%, #ffb199);
   background-size: 100%;
   -webkit-background-clip: text;
-  -mos-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -231,7 +231,7 @@
   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd #ffb199);
   background-size: 100%;
   -webkit-background-clip: text;
-  -mos-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 }
@@ -255,4 +255,31 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #4837ff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
 }
