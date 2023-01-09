@@ -420,3 +420,9 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+.services__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
